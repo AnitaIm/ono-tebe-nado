@@ -53,6 +53,7 @@
 }
 
 .tel {
+  display: block;
   font-size: 18px;
   line-height: 24.3px;
   text-decoration: underline;
@@ -60,6 +61,7 @@
 }
 
 .mail {
+  display: block;
   font-size: 18px;
   line-height: 24.3px;
   text-decoration: underline;
@@ -331,6 +333,6 @@ h1 {
 }
 
 .footer__address {
-  width: 200px;
+  width: 220px;
   font-size: 18px;
 }
