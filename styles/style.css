@@ -3,13 +3,15 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 92px 24px 96px;
+  padding: 92px 24px 93px;
 }
 
 .header__links-list {
   display: flex;
   flex: 1;
-  justify-content: center;
+  justify-content: start;
+  margin-right: -26px;
+  margin-left: 26px;
 }
 
 .header__link {
@@ -29,8 +31,8 @@
   display: inline-block;
   width: 7px;
   height: 7px;
-  margin-right: 12px;
-  margin-left: 13px;
+  margin-right: 13.5px;
+  margin-left: 13.5px;
   border: 1px solid #000000;
   border-radius: 50%;
   vertical-align: middle;
@@ -38,12 +40,12 @@
 
 .header__logo {
   display: block;
-  width: 129px;
-  height: 105px;
+  width: 137px;
 }
 
 .header__contacts {
   width: 210px;
+  margin-right: 55px;
   margin-left: auto;
   list-style-type: none;
 }
@@ -74,24 +76,13 @@
 }
 
 /* section cover*/
-h1 {
-  color: #fff;
-  font-weight: bold;
-  font-size: 100px;
-  letter-spacing: 36px;
-  text-transform: uppercase;
-}
-
-.mr-5 {
-  margin-right: 20px;
-}
-
-.text-center {
-  text-align: center;
-}
-
-.text-right {
-  text-align: right;
+.cover {
+  position: relative;
+  margin-bottom: 179px;
+  padding: 162px 50px 51px;
+  background-image: url('../images/cover.jpg');
+  background-position: center;
+  background-size: auto 100%;
 }
 
 .overlay {
@@ -105,13 +96,18 @@ h1 {
   background-color: #000000;
 }
 
-.cover {
-  position: relative;
-  margin-bottom: 170px;
-  padding: 162px 50px 62px;
-  background-image: url('../images/cover.jpg');
-  background-position: center;
-  background-size: auto 100%;
+h1 {
+  margin-right: 30px;
+  color: #fff;
+  font-weight: bold;
+  font-size: 100px;
+ line-height: 125px;
+  letter-spacing: 30px;
+  text-transform: uppercase;
+}
+
+.cover__title {
+  margin-bottom: 123px;
 }
 
 .cover__title-row {
@@ -120,12 +116,22 @@ h1 {
   display: block;
 }
 
-.cover__title-row:last-child {
-  margin-right: -36px;
+.cover__title-span {
+  margin-right: 30px;
 }
 
-.cover__title {
-  margin-bottom: 135px;
+.cover__title-row-two {
+  text-align: center;
+}
+
+.cover__title-row-three {
+  margin-left: 20px;
+  text-align: right;
+}
+
+.cover__title-row:last-child {
+  margin-top: -5px;
+  margin-right: -60px;
 }
 
 .cover__footer {
@@ -144,7 +150,7 @@ h1 {
   padding-left: 28px;
   font-weight: 400;
   line-height: 28px;
-  word-spacing: 15px;
+  word-spacing: 18.5px;
 }
 
 .cover__bid {
@@ -165,10 +171,10 @@ h1 {
 }
 
 .lots__heading {
-  padding-bottom: 19px;
+  padding-bottom: 27px;
   padding-left: 40px;
   color: rgb(0, 0, 0);
-  font-family: Raleway;
+  font-family: Raleway, Arial, sans-serif;
   font-weight: 700;
   font-size: 40px;
   line-height: 47px;
@@ -192,11 +198,15 @@ h1 {
   background-size: 540px;
 }
 
+.card_type_film {
+  background-image: url("../images/card-lot-01.jpg");
+}
+
 .card__title {
   position: relative;
   z-index: 1;
   color: rgb(255, 255, 255);
-  font-family: Raleway;
+  font-family: Raleway, Arial, sans-serif;
   font-weight: 700;
   font-size: 22px;
   line-height: 120%;
@@ -215,10 +225,6 @@ h1 {
   line-height: 120%;
   letter-spacing: 0%;
   text-align: left;
-}
-
-.card_type_film {
-  background-image: url("../images/card-lot-01.jpg");
 }
 
 .card_type_book {
@@ -268,9 +274,9 @@ h1 {
 }
 
 .about__title {
-  padding: 101px 0px 92px;
+  padding: 101px 0px 101px;
   color: rgb(0, 0, 0);
-  font-family: Raleway;
+  font-family: Raleway, Arial, sans-serif;
   font-weight: 700;
   font-size: 40px;
   line-height: 47px;
@@ -319,13 +325,6 @@ h1 {
   text-decoration: none;
 }
 
-.footer__social-list {
-  display: flex;
-  flex: 1;
-  justify-content: end;
-  column-gap: 48px;
-}
-
 .footer__social-list-item {
   width: 48px;
   height: 48px;
@@ -334,4 +333,12 @@ h1 {
 .footer__address {
   width: 220px;
   font-size: 18px;
+  line-height: 25px;
+}
+
+.footer__social-list {
+  display: flex;
+  flex: 1;
+  justify-content: end;
+  column-gap: 48px;
 }
