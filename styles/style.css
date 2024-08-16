@@ -4,7 +4,6 @@
   grid-template-columns: 2fr 1fr 2fr;
   align-items: center;
   padding: 94px 24px 93px;
-
 }
 
 .header__links-list {
@@ -12,10 +11,7 @@
   justify-content: start;
   column-gap: 28px;
   padding-left: 26px;
-  /* width: 458px; */
   list-style: circle;
-  /* margin-right: -26px;
-  margin-left: 26px; */
 }
 
 .header__links-list li:first-child {
@@ -33,7 +29,6 @@
   text-decoration: underline;
   text-underline-offset: 5px;
 }
-
 
 .header__link_active {
   text-decoration: none;
